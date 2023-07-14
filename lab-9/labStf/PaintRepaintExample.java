@@ -1,11 +1,19 @@
 import java.awt.*;
-public class PaintRepaintExample extends Frame {
+import java.awt.event.*;
+public class PaintRepaintExample extends Frame implements ActionListener{
     private int x = 90;
     private int y = 90;
-
+    Button b;
     public PaintRepaintExample() {
-        setTitle("Paint & Repaint Example");
-         
+        add(b=new Button("move"));
+        b.addActionListener(this);
+        setSize(500, 500);
+        b.setBounds(50, 50, 50, 20);
+        setLayout(null);
+        setTitle("Paint & Repaint Eg");
+    }
+    public void actionPerformed(ActionEvent e){
+        moveRectangle();
     }
 
     public void paint(Graphics g) {
@@ -24,9 +32,6 @@ public class PaintRepaintExample extends Frame {
     }
 
     public static void main(String[] args) {
-        PaintRepaintExample frm = new PaintRepaintExample();
-        frm.setSize(200, 200);
-        frm.setVisible(true);
-        frm.moveRectangle();
+        new PaintRepaintExample().setVisible(true);
     }
 }

@@ -3,7 +3,7 @@ import java.io.*;
 public class UrlDemoJava{
     public static void main(String[]args){
         try{
-            URL url = new URL("http://sudippdl.com.np");
+            URL url = new URL("http://sudippaudel.great-site.net");
            // URL url = new URL("https://www.gces.edu.np");
             System.out.println("URL is " +url.toString());
             System.out.println("protocol is " +url.getProtocol());

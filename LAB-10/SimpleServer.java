@@ -8,7 +8,9 @@ public static void main(String args[]) throws IOException {
 
 // Register service on port 1254
 ServerSocket s = new ServerSocket (1254);
+System.out.println("waitng for Client connection..........................");
 Socket sl=s.accept(); // Wait and accept a connection
+System.out.println("Client connected!!");
 // Get a communication stream associated with the socket
 OutputStream slout = sl.getOutputStream() ;
 DataOutputStream dos = new DataOutputStream (slout);
@@ -18,6 +20,6 @@ dos .writeUTF("Hi there");
 dos.close();
 slout.close();
 sl.close();
-// s.close();
+s.close();
 }
 }

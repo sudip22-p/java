@@ -14,7 +14,8 @@ public class SmileyFace extends Frame{
         g.setColor(Color.BLACK);
         g.fillOval(195, 105, 15, 25);
         g.setColor(Color.BLACK);
-        g.fillArc(90, 140, 120, 60, 180, 180);
+        // g.fillArc(90, 140, 120, 60, 180, 180);
+        g.drawArc(90, 140, 120, 60, 0, -180);
     }
     public static void main(String[] args) {
         new SmileyFace().setVisible(true);

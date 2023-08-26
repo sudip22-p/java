@@ -1,4 +1,4 @@
-package Face_EMT;
+
 import java.awt.*;
 public class SadFace extends Frame{
     public SadFace(){

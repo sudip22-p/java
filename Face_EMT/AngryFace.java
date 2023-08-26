@@ -1,4 +1,4 @@
-package Face_EMT;
+
 import java.awt.*;
 public class AngryFace extends Frame{
     public AngryFace(){

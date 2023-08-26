@@ -1,4 +1,4 @@
-package Face_EMT;
+
 import java.awt.*;
 public class SmileyFace extends Frame{
     public SmileyFace(){
